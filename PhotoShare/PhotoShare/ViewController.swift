@@ -52,6 +52,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         viewLabel.text = nil
         PhotoLibraryPreview.image = nil
         PhotoLibraryButton.isHidden = false
+        cameraPreview.image = nil
         cameraButton.isHidden = false
         firstDesription.isHidden = false
         clearButton.isHidden = true
