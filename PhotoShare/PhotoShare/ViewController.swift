@@ -107,10 +107,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func camareActionController(_ sender: Any) {
+        cameraButton.isHidden = true
         PhotoLibraryButton.isHidden = true
+        textBox.isHidden = false
+        ScreenShotButton.isHidden = false
+        firstDesription.isHidden = true
+        clearButton.isHidden = false
         let picker = UIImagePickerController()
         picker.sourceType = .camera
-        picker.allowsEditing = false
+        picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true)
     }
